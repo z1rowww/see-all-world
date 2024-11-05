@@ -1,0 +1,55 @@
+@import 'reset';
+@import 'tools';
+
+// Загальні стилі
+body {
+  font-family: $font-main;
+  background-color: $primary-color;
+}
+
+// Навігація
+.navbar {
+  @include transition(all, 0.3s);
+}
+
+// Стилі для дропдауну країн
+.dropdown-menu {
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  .cities {
+    padding: 15px;
+
+    .city-item {
+      padding: 10px 0;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  @include transition(all, 0.5s);
+}
+
+// Паралакс-секція
+.parallax-section {
+  height: 400px;
+  @include parallax('images/parallax-bg.jpg');
+
+  .parallax-content {
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+}
+
+// Стилізація для картинок країн у дропдауні
+.country-image {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+}

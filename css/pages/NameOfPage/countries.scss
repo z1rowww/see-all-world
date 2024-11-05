@@ -1,0 +1,60 @@
+@import '../../global/_reset';
+@import '../../global/_variables';
+@import '../../global/_mixins';
+
+// Секція країн
+#countries-section {
+  padding-top: 80px;
+
+  .country-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #F7EEDD;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      text-align: center;
+      background-color: #ACE2E1;
+      color: #008DDA;
+
+      .btn-info {
+        background-color: #41C9E2;
+        border-color: #41C9E2;
+        &:hover {
+          background-color: #008DDA;
+          border-color: #008DDA;
+        }
+      }
+
+      .collapse {
+        margin-top: 10px;
+        background-color: #F7EEDD;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 10px;
+
+        li {
+          padding: 5px 0;
+          color: #008DDA;
+        }
+      }
+    }
+  }
+}

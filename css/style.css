@@ -1,0 +1,84 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Секція країн */
+#countries-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+}
+
+.country-slider {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Стилі для карток країн */
+.country-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #F7EEDD;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.country-card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  text-align: center;
+  background-color: #ACE2E1;
+  color: #008DDA;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/* Стилі для кнопки та інформації про країни */
+.btn-info {
+  background-color: #41C9E2;
+  border-color: #41C9E2;
+  margin-top: 10px;
+}
+
+.btn-info:hover {
+  background-color: #008DDA;
+  border-color: #008DDA;
+}
+
+/* Картки визначних місць */
+.attraction-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.attraction-card h6 {
+  font-size: 18px;
+  color: #008DDA;
+  margin-bottom: 5px;
+}
+
+.attraction-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
